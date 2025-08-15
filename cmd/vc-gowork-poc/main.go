@@ -5,11 +5,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"vc-gowork-poc/internal/copytree"
-	"vc-gowork-poc/internal/util"
-	"vc-gowork-poc/internal/vendorstep"
-	"vc-gowork-poc/internal/workedit"
-	"vc-gowork-poc/internal/zipper"
+	"github.com/relaxnow/vc-gowork-poc/internal/copytree"
+	"github.com/relaxnow/vc-gowork-poc/internal/util"
+	"github.com/relaxnow/vc-gowork-poc/internal/vendorstep"
+	"github.com/relaxnow/vc-gowork-poc/internal/workedit"
+	"github.com/relaxnow/vc-gowork-poc/internal/zipper"
 )
 
 func main() {
@@ -21,7 +21,7 @@ func main() {
 	originalRoot, err := filepath.Abs(os.Args[1])
 	util.PanicOnErr(err)
 
-	tempRoot, err := os.MkdirTemp("", "vc-gowork-poc-*")
+	tempRoot, err := os.MkdirTemp("", "github.com/relaxnow/vc-gowork-poc-*")
 	util.PanicOnErr(err)
 	// Comment the following to keep files on disk for debugging:
 	defer func() { _ = os.RemoveAll(tempRoot) }()

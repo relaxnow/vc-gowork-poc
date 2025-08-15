@@ -7,8 +7,8 @@ import (
 	"sort"
 	"strings"
 
-	"vc-gowork-poc/internal/copytree"
-	"vc-gowork-poc/internal/util"
+	"github.com/relaxnow/vc-gowork-poc/internal/copytree"
+	"github.com/relaxnow/vc-gowork-poc/internal/util"
 
 	"golang.org/x/mod/modfile"
 )

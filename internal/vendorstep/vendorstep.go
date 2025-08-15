@@ -6,7 +6,7 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"vc-gowork-poc/internal/util"
+	"github.com/relaxnow/vc-gowork-poc/internal/util"
 )
 
 // RunVendorSteps runs vendoring with tidying first.

@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"vc-gowork-poc/internal/util"
+	"github.com/relaxnow/vc-gowork-poc/internal/util"
 )
 
 // CopyTreeNormalized copies srcRoot into dstRoot.
