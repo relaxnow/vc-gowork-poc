@@ -1,4 +1,4 @@
-module vc-gowork-poc
+module github.com/relaxnow/vc-gowork-poc
 
 go 1.22
 
