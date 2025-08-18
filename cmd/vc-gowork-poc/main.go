@@ -21,7 +21,7 @@ func main() {
 	originalRoot, err := filepath.Abs(os.Args[1])
 	util.PanicOnErr(err)
 
-	tempRoot, err := os.MkdirTemp("", "github.com/relaxnow/vc-gowork-poc-*")
+	tempRoot, err := os.MkdirTemp("", "vc-gowork-poc-")
 	util.PanicOnErr(err)
 	// Comment the following to keep files on disk for debugging:
 	defer func() { _ = os.RemoveAll(tempRoot) }()
